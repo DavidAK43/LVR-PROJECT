@@ -1,0 +1,4 @@
+class CfgFunctions 
+{
+    #include "LVR\functions\functions.hpp"
+};  
