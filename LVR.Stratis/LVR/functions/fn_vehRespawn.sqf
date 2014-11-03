@@ -18,6 +18,7 @@ Parameter(s):
 
 Usage (Vehicle init Line): 
 	_nul = [ this, 120, 60, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn << have the vehicle call the custom LVR Function upon respawn (see functions.hpp && fn_hunterInit.sqf) 
+	_nul = [this, 20, 10, {_this setVehicleAmmo 0;  _this setDammage 0.5;}] spawn LVR_fnc_vehRespawn; << Run code directly on the vehicle upon respawn
 	_nul = [ this, 120, 60 ] spawn LVR_fnc_vehRespawn; << Default usage
 	
 ---------------------------------------------------------------------------------------------------- */

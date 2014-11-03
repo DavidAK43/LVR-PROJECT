@@ -65,7 +65,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=2;
+		items=3;
 		class Item0
 		{
 			position[]={1853.2689,5.5,5702.3047};
@@ -75,11 +75,11 @@ class Mission
 			vehicle="B_MRAP_01_hmg_F";
 			skill=0.60000002;
 			text="car1";
-			init="_nul = [this, 20, 10, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
+			init="_nul = [this, 20, 10, {_this setVehicleAmmo 0;  _this setDammage 0.5;}] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item1
 		{
-			position[]={1849.4635,5.5,5721.1011};
+			position[]={1839.4138,5.5,5729.022};
 			azimut=-98.333298;
 			id=2;
 			side="EMPTY";
@@ -87,6 +87,17 @@ class Mission
 			skill=0.60000002;
 			text="car2";
 			init="_nul = [this, 20, 10] spawn LVR_fnc_vehRespawn;";
+		};
+		class Item2
+		{
+			position[]={1820.1238,5.5,5691.0981};
+			azimut=3.5180576;
+			id=3;
+			side="EMPTY";
+			vehicle="B_MRAP_01_hmg_F";
+			skill=0.60000002;
+			text="car1_1";
+			init="_nul = [this, 20, 10, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 	};
 };
